@@ -10,4 +10,6 @@
 
 @interface ORZBaseTableViewController : UIViewController
 
+@property (nonatomic, strong) UITableView *tableView;
+
 @end
