@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  memory
+//
+//  Created by neal on 14/10/16.
+//  Copyright (c) 2014年 orz. All rights reserved.
+//
+
+#ifndef memory_PrefixHeader_pch
+#define memory_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//
+// Prefix header for all source files of the 'PRIS_iPhone' target in the 'PRIS_iPhone' project
+//
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#endif
+
+#ifdef DEBUG
+#define DLog(x, ...) NSLog(x, ## __VA_ARGS__);
+#else
+#define DLog(x, ...)
+#endif
+
+
+#endif
